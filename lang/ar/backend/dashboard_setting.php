@@ -28,6 +28,7 @@ return [
     'instagram'=>'انستجرام',
     'linkedin'=>'لينكدان',
 
+    'Gabal News'=>'جبل الاخبار',
     '| Dashboard'=>'| المنصة',
     '| Post'=>'| المنشور',
     '| Category'=>'| القسم',

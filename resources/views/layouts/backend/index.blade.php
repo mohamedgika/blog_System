@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{asset('imgs/'.$set->favicon)}}" type="image/x-icon">
-    <title>{{LaravelLocalization::getCurrentLocaleDirection() == 'ltr' ? $set->getTranslation('title','en') : $set->getTranslation('title','ar') }} @yield('title')</title>
+    <link rel="shortcut icon" href="{{ isset($set) == true ? asset('imgs/'.$set->favicon) : asset('imgs/category/news.png') }}" type="image/x-icon">
+    <title>{{ isset($set) == true ? LaravelLocalization::getCurrentLocaleDirection() == 'ltr' ? $set->getTranslation('title','en') : $set->getTranslation('title','ar') : __('backend/dashboard_setting.Gabal News') }} @yield('title')</title>
     @include('layouts.backend.head_dashboard')
 
 </head>

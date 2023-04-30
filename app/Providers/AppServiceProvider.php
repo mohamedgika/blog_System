@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         try{
-            
+
         $set = Setting::first(); // Use Setting Model in All Projects
         view()->share('set', $set);
 

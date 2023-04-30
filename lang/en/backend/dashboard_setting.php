@@ -28,6 +28,7 @@ return [
     'instagram'=>'instagram',
     'linkedin'=>'linkedin',
 
+    'Gabal News'=>'Gabal News',
     '| Dashboard'=>'| Dashboard',
     '| Post'=>'| Post',
     '| Category'=>'| Category',
