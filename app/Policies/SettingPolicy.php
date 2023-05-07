@@ -35,6 +35,7 @@ class SettingPolicy
      */
     public function update(User $user, Setting $setting): bool
     {
+        
     }
 
     /**

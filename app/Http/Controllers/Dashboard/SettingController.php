@@ -27,23 +27,20 @@ class SettingController extends Controller
         return view('backend.Setting.dashboard_setting',['setting'=>$setting]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(StoreSettingRequest $request)
     {
         try{
 
             // Function To Save In Storage With Folder Name
             $logo = $this->uploadfile($request,'logo','logo');
+            
             $favicon = $this->uploadfile($request,'favicon','favicon');
 
             Setting::create([
